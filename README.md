@@ -15,13 +15,21 @@ This project try to connect 2 powerfull tools like MS Automate and Autodesk Forg
 
 ### Installing
 
-* First download the file conexion from https://github.com/idom-mam/PowerAutomate_Forge/blob/70ce9cf3a7c6bdf39533201f4756ec6e513e7265/Conexion_ForgeBIM360.swagger.json
-⚠️ this is only done the first time
-* Go to 
+* First download the custom connection file from https://github.com/idom-mam/PowerAutomate_Forge/blob/70ce9cf3a7c6bdf39533201f4756ec6e513e7265/Conexion_ForgeBIM360.swagger.json
+⚠️ this is only done the first time!
+* Then install the custom connector into Power Automate platform. Set your custom name and remember it!
+* Now download the flow file and install again in Power Automate
 
 ### Executing program
 
-* How to run the program
+* Run the flow setting the varibles like image below
+
+
+
+![image](https://user-images.githubusercontent.com/69762389/164712736-789a9330-7ef4-4be2-9a77-18f7a3d605ab.png)
+
+
+#### ⚠️ In models_id variable must be separated by comma and without spaces!
 * Step-by-step bullets
 ```
 code blocks for commands
@@ -36,28 +44,9 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+@idom-mam
 
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
