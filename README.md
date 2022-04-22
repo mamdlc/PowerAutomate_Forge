@@ -15,8 +15,9 @@ This project try to connect 2 powerfull tools like MS Automate and Autodesk Forg
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* First download the file conexion from https://github.com/idom-mam/PowerAutomate_Forge/blob/70ce9cf3a7c6bdf39533201f4756ec6e513e7265/Conexion_ForgeBIM360.swagger.json
+⚠️ this is only done the first time
+* Go to 
 
 ### Executing program
 
