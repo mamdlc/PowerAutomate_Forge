@@ -15,10 +15,10 @@ This project try to connect 2 powerfull tools like MS Automate and Autodesk Forg
 
 ### Installing
 
-* First download the custom connection file from https://github.com/idom-mam/PowerAutomate_Forge/blob/70ce9cf3a7c6bdf39533201f4756ec6e513e7265/Conexion_ForgeBIM360.swagger.json
-⚠️ this is only done the first time!
-* Then install the custom connector into Power Automate platform. Set your custom name and remember it!
-* Now download the flow file and install again in Power Automate
+* First download the Custom Connector file from https://github.com/idom-mam/PowerAutomate_Forge/blob/70ce9cf3a7c6bdf39533201f4756ec6e513e7265/Conexion_ForgeBIM360.swagger.json
+#### ⚠️ Do this only first time!
+* Then install the Custom Connector into Power Automate platform. Set your custom name and remember it!
+* Now download the flow file and install again in Power Automate platform. Should be set the Custom Connector during the installation. 
 
 ### Executing program
 
@@ -29,20 +29,9 @@ This project try to connect 2 powerfull tools like MS Automate and Autodesk Forg
 ![image](https://user-images.githubusercontent.com/69762389/164712736-789a9330-7ef4-4be2-9a77-18f7a3d605ab.png)
 
 
-#### ⚠️ In models_id variable must be separated by comma and without spaces!
-* Step-by-step bullets
-```
-code blocks for commands
-```
+#### ⚠️ In models_id variable must be an Array of wich have to be separated by commas and without spaces!
 
 ## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
 
 Please, let me any comments at: https://www.linkedin.com/in/mamenesesdlc/
 
