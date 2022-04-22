@@ -1,0 +1,313 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "BIM360 URN_Power Automate",
+    "description": "BIM360 URN_Power Automate"
+  },
+  "host": "developer.api.autodesk.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/project/v1/hubs/": {
+      "get": {
+        "summary": "BIM 360 Hubs",
+        "description": "BIM 360 Hubs",
+        "operationId": "Bim360Hubs",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/project/v1/hubs/{hub_id}/projects/": {
+      "get": {
+        "summary": "BIM 360 Projects",
+        "description": "BIM 360 Projects",
+        "operationId": "Bim360Projects",
+        "parameters": [
+          {
+            "name": "hub_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/project/v1/hubs/{hub_id}/projects/{project_id}/topFolders": {
+      "get": {
+        "summary": "BIM 360 Project Folders",
+        "description": "BIM 360 Project Folders",
+        "operationId": "Bim360ProjectFolders",
+        "parameters": [
+          {
+            "name": "hub_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "project_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/data/v1/projects/{project_id}/folders/{folder_id}/contents": {
+      "get": {
+        "summary": "BIM 360 Project SubFolders contents I",
+        "description": "BIM 360 Project SubFolders contents I",
+        "operationId": "Bim360ProjectSubfoldersContentsI",
+        "parameters": [
+          {
+            "name": "project_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "folder_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/data/v1/projects/{project_id}/commands": {
+      "post": {
+        "summary": "BIM 360 Publish RCW",
+        "description": "BIM 360 Publish RCW",
+        "operationId": "Bim360PublishRcw",
+        "parameters": [
+          {
+            "name": "project_id",
+            "default": "",
+            "in": "path",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "default": "application/vnd.api+json",
+            "description": "Content-Type"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "jsonapi": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string",
+                      "description": "version",
+                      "title": "",
+                      "default": "1.0"
+                    }
+                  },
+                  "description": "jsonapi"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "type",
+                      "title": "",
+                      "default": "commands"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {
+                        "extension": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "description": "type",
+                              "title": "",
+                              "default": "commands:autodesk.bim360:C4RModelPublish"
+                            },
+                            "version": {
+                              "type": "string",
+                              "description": "version",
+                              "title": "version",
+                              "default": "1.0.0"
+                            }
+                          },
+                          "description": "extension"
+                        }
+                      },
+                      "description": "attributes"
+                    },
+                    "relationships": {
+                      "type": "object",
+                      "properties": {
+                        "resources": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "description": "type",
+                                    "title": "",
+                                    "default": "items"
+                                  },
+                                  "id": {
+                                    "type": "string",
+                                    "description": "id",
+                                    "title": "",
+                                    "default": ""
+                                  }
+                                }
+                              },
+                              "description": "data"
+                            }
+                          },
+                          "description": "resources"
+                        }
+                      },
+                      "description": "relationships"
+                    }
+                  },
+                  "description": "data"
+                }
+              },
+              "default": {
+                "jsonapi": {
+                  "version": "1.0"
+                },
+                "data": {
+                  "type": "commands",
+                  "attributes": {
+                    "extension": {
+                      "type": "commands:autodesk.bim360:C4RModelPublish",
+                      "version": "1.0.0"
+                    }
+                  },
+                  "relationships": {
+                    "resources": {
+                      "data": [
+                        {
+                          "type": "items",
+                          "id": ""
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/data/v1/projects/{project}/items/{model}/versions": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "BIM360Urn",
+        "description": "BIM360Urn",
+        "operationId": "BIM360Urn",
+        "parameters": [
+          {
+            "name": "project",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "default": "",
+            "description": "bim360_project",
+            "x-ms-summary": "bim360_project"
+          },
+          {
+            "name": "model",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "default": "",
+            "description": "bim360_model",
+            "x-ms-summary": "bim360_model"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://developer.api.autodesk.com/authentication/v1/authorize",
+      "tokenUrl": "https://developer.api.autodesk.com/authentication/v1/gettoken",
+      "scopes": {
+        "data:create data:write data:read": "data:create data:write data:read"
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2_auth": [
+        "data:create data:write data:read"
+      ]
+    }
+  ],
+  "tags": []
+}
