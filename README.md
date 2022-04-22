@@ -19,6 +19,9 @@ This project try to connect 2 powerfull tools like MS Automate and Autodesk Forg
 #### ⚠️ Do this only first time!
 * Then install the Custom Connector into Power Automate platform. Set your custom name and remember it!
 * Now download the flow file and install again in Power Automate platform. Should be set the Custom Connector during the installation. 
+https://github.com/idom-mam/PowerAutomate_Forge/blob/cc498800f8e44f0219af6195fbda92a7707bfa6e/Manual_PublishCWBIM360/Manual-PublishCWMBIM360_20220422115102.zip
+
+![image](https://user-images.githubusercontent.com/69762389/164714832-a7f52ccc-d5ec-4f40-b354-940ce45f008e.png)
 
 ### Executing program
 
